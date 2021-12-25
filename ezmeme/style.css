@@ -1,0 +1,222 @@
+body {
+	background-color: black;
+}
+
+hr {
+	color: white;
+}
+
+input {
+    cursor: pointer;
+}
+
+table {
+	text-align: left;
+}
+
+/*==============================================================*/
+
+.standardStyle{
+	margin: 2px;
+	padding: 2px;
+	border: 1px solid white;
+}
+
+.ezCanvasWrapper {
+	/* width: 100%; */
+	/* height: 1200px; */
+	min-width:1000px;
+	min-height:800px;
+	border: 2px solid red;
+	position: relative;
+	border: 2px solid green;
+	display: inline-block;
+	margin: 2px;
+}
+
+.ezCanvasWrapper .ezCanvas {
+    position: absolute;
+    border: 1px solid blue;
+	height: 100%;
+	width: 100%;
+} 
+
+#toolbarSpace_id {
+    text-align:center;
+	float: top;
+	/* border: 1px solid white; */
+}
+
+#ezToolbar_id {
+	background-color: grey;
+	border: 2px groove white;
+	height: 27px;
+	display: inline-block;
+	margin-top:2px;
+	padding: 1px;
+	margin: 1px;
+}
+
+#ezMemeTextInputDialog_id{
+	background-color: blue;
+	color: white;
+	display: inline-block; 
+	text-align: center;
+	z-index: 999;
+	border: 2px outset white;
+	vertical-align:top;
+	padding: 1px;
+	margin: 1px;
+}
+
+#ezMemeTextInputDialog_bottomSection_id{
+	text-align:left;
+	display:inline-block;
+}
+
+#ezMemeTextInputDialog_text_id{
+	width: 250px;
+	height: 20px;
+	margin-top:4px;
+}
+
+/* #ezMemeTextInputDialog_fontSelect_id {
+		
+} */
+
+#ezMemeTextInputDialog_size_id{
+	width:50px;
+}
+
+#ezTop_id {
+	text-align: center;
+	background-color: white;
+}
+
+
+
+/*==============================================================*/
+
+.ezToolbarButton {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border: 1px outset black; 
+	cursor: pointer;
+}
+.ezToolbarToggle {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border: 1px outset black; 
+	cursor: pointer;
+}
+.ezToolbarToggle_set {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border: 1px inset green; 
+	cursor: pointer;
+
+}
+.ezToolbarToggle img {
+    max-width: 100%;
+    max-height: 100%;	
+}
+
+.ezToolbarToggle_set img {
+    max-width: 100%;
+    max-height: 100%;	
+}
+
+.ezToolbarButton img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.controlBox {
+	
+	border: 1px solid green;
+}
+
+.ezButtonSet {
+	border: 2px inset green;
+}
+
+.ezButtonDown {
+    border: 2px inset red;
+}
+
+.ezButtonUp {
+    border: 1px outset black;
+}
+
+.centerTitle {
+	text-align:center;
+}
+
+.entryField {
+	width: 200px;
+	margin: 2px;
+}
+
+.exitButton {
+	font-size:12px;
+	background-color:red;
+	color:#00ffff;
+	border:1px outset black;
+	display: inline-block;
+	/* float:right; */
+	padding:1px;
+	line-height:12px;
+	text-align:center;
+	width:12px;
+	margin:2px;
+	font-family: "Lucida Console";
+	cursor:pointer;
+	
+}
+
+.ezButtonRow {
+	margin: 2px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.ezButton2 {
+	display: inline-block;
+	background-color: #008800;
+	color: white;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+	margin: 4px;
+	padding: 4px;	
+	cursor: pointer;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 90px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 110%;
+  left: 0;
+  font-size: 12px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
