@@ -332,24 +332,6 @@ $(document).ready(function(){
 			let x = e.pageX - display.lastClicked.x - 150;
 			let y = e.pageY - display.lastClicked.y - 150;
 			
-			//let x = e.clientX - display.lastClicked.x;
-			//let y = e.clientY - display.lastClicked.y;			
-			
-			// function getMousePos(canvas, evt) {
-				// var rect = canvas.getBoundingClientRect();
-				// return {
-				  // x: evt.clientX - rect.left,
-				  // y: evt.clientY - rect.top
-				// };
-			// }			
-			
-			// let canvas = display.front.canvas;
-			// let mousePosition = getMousePos(canvas,e);
-			// let x = mousePosition.x - display.lastClicked.x;
-			// let y = mousePosition.y - display.lastClicked.y;
-			
-			
-			
 			let w = display.width;
 			let h = display.height;		    
 		    let direction = e.deltaY * FULL_CIRCLE / 180;
@@ -470,8 +452,6 @@ $(document).ready(function(){
 			textToFront(x,y);
 			
 			display.reset();
-			//let w = display.width, h = display.height;
-			//display.drawImage(display.cFrontCanvas, 0, 0, w, h, 0, 0, w, h);	
 			
 		};
 		display.onMouse('down',down);
