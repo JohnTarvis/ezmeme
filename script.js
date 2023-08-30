@@ -3,9 +3,6 @@ const FULL_CIRCLE = Math.PI * 2;
 const wRatio = 1 - 0.2158273381294964;
 const hRatio = 1 - 0.19946808510638298;
 
-let frontImageHeight = 0;
-let backImageHeight = 0;
-
 function getRandomInt(max) {
 	return Math.floor(Math.random() * Math.floor(max));
 }
@@ -279,14 +276,7 @@ class EZ_Display {
 	    this.restoreDefaults();
 	    this.removeEvents();	    
 	}
-	addMouseCursor(){
-	    this.b4Cursor = this.front.getImageData();
-	    let f = function(e){
-			let x = e.pageX;
-			let y = e.pageY;
-			///---///unfinished
-	    };
-	}
+
 }
 
 ///---------------------------------------------------------------------
@@ -328,20 +318,6 @@ $(document).ready(function(){
 		display.restoreState();
 		display.removeEvents();
 	});
-	
-	function restoreLastCanvasState(){
-    	if(!!display.lastCanvas){
-    	    let context = display.lastCanvas.getContext('2d');
-    	    context.restore();
-    	}		
-	}
-	
-	function saveLastCanvasState(){
-    	if(!!display.lastCanvas){
-    	    let context = display.lastCanvas.getContext('2d');
-    	    context.save();
-    	}		
-	}	
 	
 	///-rotate image
     $("#ezRotateButton_id").mousedown(function() {
